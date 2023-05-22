@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTAÇÃO</title>
+</head>
+<body>
+    <script> 
+    let votoJoao = 0;
+    let votoDilma = 0;
+    let votoKid = 0;
+    let votoAna = 0;
+    let votoBrancoNulo = 0;
+    let opcao= 10;
+        
+    while(opcao != 0)
+    {
+        opcao = parseInt(prompt("DIGITE 1 - PARA VOTAR NO JOÃO\nDIGITE 2- PARA VOTAR NA DILMA\nDIGITE 3- PARA VOTAR NO KID BENGALA\nDIGITE 4- PARA VOTAR NA ANA\nDIGITE 5- PARA VOTAR BRANCO/NULO\nDIGITE 0- PARA SAIR"));
+        
+        switch(opcao)
+            {                
+                case 1:
+                    votoJoao++;
+                    break;
+                case 2:
+                    votoDilma++;
+                    break;
+                case 3:
+                    votoKid++;
+                    break;
+                case 4:
+                    votoAna++;
+                    break;
+                case 5:
+                    votoBrancoNulo++;
+                    break;                     
+            }        
+    }
+    alert(`VC TERMINOU DE VOTAR!\n
+     CONTAGEM DE VOTOS\n
+     JOAO TOTAL: ${votoJoao} VOTOS\n
+     DILMA TOTAL: ${votoDilma} VOTOS\n
+    KID BENGALA TOTAL: ${votoKid} VOTOS\n
+    ANA TOTAL: ${votoAna} VOTOS\n
+    VOTOS BRANCOS/NULOS: ${votoBrancoNulo} `)
+    
+    </script>
+</body>
+</html>
